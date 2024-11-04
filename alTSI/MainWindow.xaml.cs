@@ -151,6 +151,7 @@ namespace alTSI
             Cofe.Visibility = Visibility.Hidden; // Скрываем Cofe
         }
 
+
         private async Task FillProgressBarAsync(int seconds)
         {
             CoffeeProgressBar.Visibility = Visibility.Visible;
