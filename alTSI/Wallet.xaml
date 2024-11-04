@@ -8,45 +8,77 @@
         Title="Кошелек" Height="500" Width="700" Background="#4f321c">
     <Grid>
         <StackPanel>
-            <!--Карта и монеты-->
-            <StackPanel Width="700" Height="110" Orientation="Horizontal">
-                <Image Source="D:/4 курс/ТСИ/img/Karta.png" Width="150"  Margin="10, 0, 70, 0"/>
-                
-                <!--Монеты 1р и 2р-->
-                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="10, 8, 0, 0"/>                
-                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
-                
-                <!--Монеты 5р и 10р-->
-                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="30, 2, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-60, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
+            <!-- Итоговая сумма -->
+            <TextBlock x:Name="TotalAmountText" Text="Итого: 0р" FontSize="20" Foreground="White" Margin="10"/>
 
+            <!-- Кнопка "Заплатить" -->
+            <!--<Button x:Name="PayButton" Content="Заплатить" Click="PayButton_Click" Margin="10" IsEnabled="False"/>-->
+            <Button x:Name="PayButton" Content="Заплатить" Click="PayButton_Click" 
+                    Width="100" Height="25" HorizontalAlignment="Left" Margin="10" 
+                    FontFamily="Arial Rounded MT Bold" Foreground="#ebe5dd" FontSize="15">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#705948"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#524135"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <StackPanel Width="700" Height="110" Orientation="Horizontal">
+                <Image Source="D:/4 курс/ТСИ/img/Karta.png" Width="150" Margin="10, 0, 70, 0" MouseLeftButtonDown="Card_Click"/>
+
+                <!-- Монеты 1р и 2р -->
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="10, 8, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+
+                <!-- Монеты 5р и 10р -->
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="30, 2, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-60, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0" MouseLeftButtonDown="Coin_Click"/>
             </StackPanel>
-            
-            <!--Банкноты-->
+
+            <!-- Банкноты -->
             <StackPanel Width="700" Orientation="Horizontal">
-                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="15, 15, -50, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B50.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0"/>
-                <Image Source="D:/4 курс/ТСИ/img/B100.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="15, 15, -50, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B50.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0" MouseLeftButtonDown="Coin_Click"/>
+                <Image Source="D:/4 курс/ТСИ/img/B100.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0" MouseLeftButtonDown="Coin_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

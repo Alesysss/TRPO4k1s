@@ -38,7 +38,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Эспрессо-->
-                        <local:But10UC Grid.Row="0" Grid.Column="1" Click="Button_Espresso"/>
+                        <local:But10UC Grid.Row="0" Grid.Column="1" Click="Button_Coffee35"/>
 
                         <Border BorderBrush="#211f1d" Grid.Row="1" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel  Grid.Row="1" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -49,7 +49,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Американо-->
-                        <local:But10UC Grid.Row="1" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="1" Grid.Column="1" Click="Button_Coffee30" Margin="0, -10, 0, 0"/>
 
                         <Border BorderBrush="#211f1d" Grid.Row="2" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -60,7 +60,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Латте-->
-                        <local:But10UC Grid.Row="2" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="2" Grid.Column="1" Click="Button_Coffee45" Margin="0, -10, 0, 0"/>
 
                         <Border BorderBrush="#211f1d" Grid.Row="3" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -71,7 +71,7 @@
                         </StackPanel>
                         </Border>
                         <!--Кнопка Капучино-->
-                        <local:But10UC Grid.Row="3" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="3" Grid.Column="1" Click="Button_Coffee45" Margin="0, -10, 0, 0"/>
                         
                         <Border BorderBrush="#211f1d" Grid.Row="4" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -82,7 +82,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Мокко-->
-                        <local:But10UC Grid.Row="4" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="4" Grid.Column="1" Click="Button_Coffee50" Margin="0, -10, 0, 0"/>
                     </Grid >
 
                     <Grid  Width="130" Height="230" Margin="10, 10, 10, 10">
@@ -107,7 +107,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Флэт Вайт-->
-                        <local:But10UC Grid.Row="0" Grid.Column="1" Click="Button_Espresso"/>
+                        <local:But10UC Grid.Row="0" Grid.Column="1" Click="Button_Coffee55"/>
 
                         <Border BorderBrush="#211f1d" Grid.Row="1" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel  Grid.Row="1" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -118,7 +118,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Маккиато-->
-                        <local:But10UC Grid.Row="1" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="1" Grid.Column="1" Click="Button_Coffee30" Margin="0, -10, 0, 0"/>
                                                 
                         <Border BorderBrush="#211f1d" Grid.Row="2" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -129,7 +129,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Кон Панна-->
-                        <local:But10UC Grid.Row="2" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="2" Grid.Column="1" Click="Button_Coffee45" Margin="0, -10, 0, 0"/>
                         
                         <Border BorderBrush="#211f1d" Grid.Row="3" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -140,7 +140,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Бреве-->
-                        <local:But10UC Grid.Row="3" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="3" Grid.Column="1" Click="Button_Coffee45" Margin="0, -10, 0, 0"/>
 
                         <Border BorderBrush="#211f1d" Grid.Row="4" Grid.Column="0" BorderThickness="2" CornerRadius="10" Margin="0, 0, 3, 10">
                             <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal"  Height="30" Width="103" >
@@ -151,7 +151,7 @@
                             </StackPanel>
                         </Border>
                         <!--Кнопка Лунго-->
-                        <local:But10UC Grid.Row="4" Grid.Column="1" Click="Button_Espresso" Margin="0, -10, 0, 0"/>
+                        <local:But10UC Grid.Row="4" Grid.Column="1" Click="Button_Coffee50" Margin="0, -10, 0, 0"/>
                     </Grid >
                 </StackPanel>
                 
@@ -161,14 +161,16 @@
                         <Grid>
                             <!--То, что находится под крышкой-->
                             <StackPanel Background="Transparent" Orientation="Vertical">
-                                <Image Source="D:/4 курс/ТСИ/img/St1.png" Height="85"  VerticalAlignment="Center" Margin="0, 35, 0, 0" />
-                                
-                                
+                                <Rectangle Fill="#9c9591" Margin="0 0 0 0" Height="10" Width="15" VerticalAlignment="Bottom" RadiusX="1" RadiusY="1"/>
+                                <Rectangle Fill="#29221d" x:Name="Cofe" Margin="0 0 0 0" Height="40" Width="4" VerticalAlignment="Bottom" RadiusX="1" RadiusY="1" Visibility="Hidden"/>
+                                <!-- Скрываем Cofe по умолчанию -->
+                                <Image Source="D:/4 курс/ТСИ/img/St1.png" Height="85" VerticalAlignment="Center" Margin="0, -20, 0, 0"/>
                             </StackPanel>
                             <!--Открывающаяся крышка-->
                             <Border Background="#8024211d" CornerRadius="3" Margin="0,0,0,0" Height="135" Width="105"/>
-                            <Rectangle Fill="#0a0a0a"  Margin="0,0,0,5" Height="8" Width="70" VerticalAlignment="Bottom" RadiusX="5" RadiusY="5"/>
+                            <Rectangle Fill="#0a0a0a" Margin="0,0,0,5" Height="8" Width="70" VerticalAlignment="Bottom" RadiusX="5" RadiusY="5"/>
                         </Grid>
+
                     </Border>
 
                     <!--<StackPanel Background="Transparent">
@@ -191,8 +193,15 @@
                 <StackPanel Background="#1a1919" Height="125" Width="90" Margin="0, 15, 0, 0">
                     <!--Экранчик с инфой-->
                     <StackPanel Background="White" Height="50" Width="75" Margin="5, 7, 5, 0">
-                        <TextBlock  Text="Слова"  HorizontalAlignment="Center" x:Name="WordPad"
-                                    FontFamily="Arial Rounded MT Bold" Foreground="Black" FontSize="7"/>
+                        <!--<TextBlock  Text="Слова"  HorizontalAlignment="Center" x:Name="WordPad1"
+                                    FontFamily="Arial Rounded MT Bold" Foreground="Black" FontSize="7"/>-->
+                        <!--qwerty-->
+                        <TextBlock x:Name="WordPad" Text="Выберите напиток" FontFamily="Arial Rounded MT Bold" Foreground="Black" 
+                                   FontSize="7" HorizontalAlignment="Center" Margin="0, 10, 0, 0"/>
+
+                        <!-- Добавляем ProgressBar -->
+                        <ProgressBar x:Name="CoffeeProgressBar" Width="60" Height="10" Margin="10" Visibility="Hidden"/>
+                        <!--qwerty-->
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <Grid Height="15" Width="26" Margin="0, 7, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -284,14 +293,14 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                
+
                 <!--Сахар-->
                 <!--Background="#1c1919"-->
                 <StackPanel Background="#2e2b2b" Margin="0, 10, 0, 0" HorizontalAlignment="Center" Height="46" Width="100">
                     <StackPanel Background="#636663" Margin="0, 8, 0, 0" Height="29" Width="80">
-                        <TextBlock  Text="Количество сахара"  HorizontalAlignment="Center" Margin="0, 3, 0, 0"
-                                    FontFamily="Arial Rounded MT Bold" Foreground="#282b29" FontSize="6"/>
-                        <Grid  Width="80" Height="20" Margin="2, 0, 0, 0">
+                        <TextBlock Text="Количество сахара" HorizontalAlignment="Center" Margin="0, 3, 0, 0"
+                   FontFamily="Arial Rounded MT Bold" Foreground="#282b29" FontSize="6"/>
+                        <Grid Width="80" Height="20" Margin="2, 0, 0, 0" Name="SugarGrid">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="15"/>
@@ -299,7 +308,7 @@
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="15"/>
                             </Grid.ColumnDefinitions>
-                            <Rectangle Grid.Column="0" Height="10" Width="10" Fill="#282b29" Stroke="#282b29" StrokeThickness="1" RadiusX="10" RadiusY="10" Margin="0, 0, 0, 0"/>
+                            <Rectangle Grid.Column="0" Height="10" Width="10" Fill="#282b29" Stroke="#282b29" StrokeThickness="1" RadiusX="10" RadiusY="10"/>
                             <Rectangle Grid.Column="1" Height="10" Width="10" Fill="#282b29" Stroke="#282b29" StrokeThickness="1" RadiusX="10" RadiusY="10"/>
                             <Rectangle Grid.Column="2" Height="10" Width="10" Fill="#636663" Stroke="#282b29" StrokeThickness="1" RadiusX="10" RadiusY="10"/>
                             <Rectangle Grid.Column="3" Height="10" Width="10" Fill="#636663" Stroke="#282b29" StrokeThickness="1" RadiusX="10" RadiusY="10"/>
@@ -308,16 +317,17 @@
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Background="#1c1919" Margin="0, 0, 0, 0" HorizontalAlignment="Center" Height="24" Width="100" Orientation="Horizontal">
-                    <TextBlock  Text="+"  Margin="10, 0, 5, 0" VerticalAlignment="Center"
-                                FontFamily="Arial Rounded MT Bold" Foreground="#ebe5dd" FontSize="12"/>
+                    <TextBlock Text="+" Margin="10, 0, 5, 0" VerticalAlignment="Center"
+               FontFamily="Arial Rounded MT Bold" Foreground="#ebe5dd" FontSize="12"/>
                     <!--Кнопка + -->
-                    <local:ButSaxUC Click="Button_Plus"/> 
+                    <local:ButSaxUC Click="Button_Plus_Click"/>
                     <!--Кнопка - -->
-                    <local:ButSaxUC Click="Button_Minus" Margin="24, 0, 0, 0"/>
-                    <TextBlock  Text="-"  Margin="5, 0, 0, 0" VerticalAlignment="Center"
-                                FontFamily="Arial Rounded MT Bold" Foreground="#ebe5dd" FontSize="12"/>
+                    <local:ButSaxUC Click="Button_Minus_Click" Margin="24, 0, 0, 0"/>
+                    <TextBlock Text="-" Margin="5, 0, 0, 0" VerticalAlignment="Center"
+               FontFamily="Arial Rounded MT Bold" Foreground="#ebe5dd" FontSize="12"/>
                 </StackPanel>
-                
+
+
                 <!--Оплата банкнотами-->
                 <StackPanel Background="#ebe5dd" Margin="0, 30, 0, 0" HorizontalAlignment="Center" Height="36" Width="80">
                     <TextBlock  Text="Банкноты сюда"  HorizontalAlignment="Center" Margin="0, 1, 0, 3"
