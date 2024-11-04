@@ -1,0 +1,53 @@
+﻿<Window x:Class="alTSI.Wallet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:alTSI"
+        mc:Ignorable="d"
+        Title="Кошелек" Height="500" Width="700" Background="#4f321c">
+    <Grid>
+        <StackPanel>
+            <!--Карта и монеты-->
+            <StackPanel Width="700" Height="110" Orientation="Horizontal">
+                <Image Source="D:/4 курс/ТСИ/img/Karta.png" Width="150"  Margin="10, 0, 70, 0"/>
+                
+                <!--Монеты 1р и 2р-->
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="10, 8, 0, 0"/>                
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M1.png" Width="43" VerticalAlignment="Top" Margin="-25, 8, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M2.png" Width="50" VerticalAlignment="Bottom" Margin="-43, 0, 0, 0"/>
+                
+                <!--Монеты 5р и 10р-->
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="30, 2, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-60, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M5.png" Width="55" VerticalAlignment="Top" Margin="-25, 2, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/M10.png" Width="50" VerticalAlignment="Bottom" Margin="-55, 0, 0, 0"/>
+
+            </StackPanel>
+            
+            <!--Банкноты-->
+            <StackPanel Width="700" Orientation="Horizontal">
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="15, 15, -50, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, -50, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B10.png" Height="330" VerticalAlignment="Top" Margin="-50, 15, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B50.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0"/>
+                <Image Source="D:/4 курс/ТСИ/img/B100.png" Height="330" VerticalAlignment="Top" Margin="30, 15, 0, 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
